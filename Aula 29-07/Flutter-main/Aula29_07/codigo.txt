@@ -1,0 +1,22 @@
+void main() {
+  String produto;
+  int quantidade;
+  double preco;
+  double imposto;
+  bool disponivel;
+  var valortotal;
+  produto = 'Camiseta ADS';
+  quantidade = 3;
+  preco = 49.90;
+  imposto = 5.0;
+  disponivel = true;
+  print('Produto: $produto');
+  print('Disponivel em estoque: $disponivel');
+  print('Quantidade: $quantidade');
+  print('Preço unitario: $preco');
+  
+  valortotal = (quantidade * preco) * (1 + imposto/100);
+  print('Valor Total: $valortotal');
+  
+  
+}
